@@ -1,4 +1,5 @@
 package com.revature.string;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 public class Stringdemo {
 	public static void main(String[] args) {
@@ -72,5 +73,10 @@ public class Stringdemo {
 		int agenumber=Integer.parseInt(age); //string into integer
 			String bonus="43543543.234";
 		double bonusvalue=Double.parseDouble(bonus);
+		Scanner sc=new Scanner(System.in);
+		String sread= sc.nextLine();
+		
+		
+		
 	}
 }
