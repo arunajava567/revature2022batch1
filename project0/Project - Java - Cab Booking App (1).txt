@@ -1,0 +1,30 @@
+
+Project 0	Java, SQL, JDBC, Scanner, JUnit, log 4j
+Project 1	HTML, Servlet, Maven, Git, JavaScript, Hibernate, EC2, S3
+
+
+
+cab booking app
+===============
+the purpose of this application is to manage the cab request by its employees.
+
+users of the application:
+-------------------------
+*: admin user to provide cab availability details to end user and to manage department and employee details
+*: manager (an employee) to approve or reject the request
+*: employee to raise a cab request
+
+use case flow:
+--------------
+the employee of a department will login and raise a cab request
+the system will send an email to the department head of the employee who requested the cab
+the department head will approve/reject the cab request
+if the cab request is rejected, the employee can raise another request with more details
+if the cab request is approve, the action can be taken by the admin user to provide the cab details and timing - with this the request is closed.
+if the department head missed to approve or missed the approval email, the requester can send the same request again or the admin can request the department head to approve the request
+
+the admin will add departments and assign the department heads (picking an employee)
+the admin will configure the employee informations (with auto generated password) and once the employee info is created, it will be active default and an email will send to the employee on the given email id.
+admin user can reset the employee's password and the reset password will be emailed to the employee directly.
+
+the admin user should be able to see the requests raised for the given date range
