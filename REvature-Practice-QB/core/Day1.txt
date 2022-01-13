@@ -1,0 +1,22 @@
+Day 1:
+Difference between stack n heap memory?
+What is classloader and types of classloaders.
+what is the purpose of JIT compiler
+Is JVM platform independent?
+Whats makes java platform independent?
+Why java is robust?
+Is java passby value or passby ref?
+
+Significance of static keyword 
+Can we override static methods.
+Diff between final, finally ,finalize()
+Diff between overloading overriding
+How many ways to create object in java
+Methods of Object class
+difference between astract class an dinterface when to prefer to use each of them
+What all the new features introduced in java8 interface
+What all the types of cloning? and explain differences.
+What is constructor chaining?
+Can we override /overload static method?
+Purpose of this and super keyword.
+Explain access modifiers?
