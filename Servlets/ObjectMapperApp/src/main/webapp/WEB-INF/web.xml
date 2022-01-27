@@ -1,0 +1,93 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>CourseMapperServlet</servlet-name>
+  	<display-name>CourseMapperServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.servlets.CourseMapperServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ErrorHandler</servlet-name>
+  	<display-name>ErrorHandler</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.servlets.ErrorHandler</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>URLFirstWorld</servlet-name>
+  	<display-name>URLFirstWorld</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.sessiontracting.URLFirstWorld</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>URLSecondWorld</servlet-name>
+  	<display-name>URLSecondWorld</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.sessiontracting.URLSecondWorld</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>cookie1</servlet-name>
+  	<display-name>cookie1</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.sessiontracting.cookie1</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>cookie2</servlet-name>
+  	<display-name>cookie2</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.sessiontracting.cookie2</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>session1</servlet-name>
+  	<display-name>session1</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.sessiontracting.session1</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>session2</servlet-name>
+  	<display-name>session2</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.sessiontracting.session2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CourseMapperServlet</servlet-name>
+  	<url-pattern>/CourseMapperServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ErrorHandler</servlet-name>
+  	<url-pattern>/errorHandler</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>URLFirstWorld</servlet-name>
+  	<url-pattern>/URLFirstWorld</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>URLSecondWorld</servlet-name>
+  	<url-pattern>/URLSecondWorld</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>cookie1</servlet-name>
+  	<url-pattern>/cookie1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>cookie2</servlet-name>
+  	<url-pattern>/cookie2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>session1</servlet-name>
+  	<url-pattern>/session1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>session2</servlet-name>
+  	<url-pattern>/session2</url-pattern>
+  </servlet-mapping>
+  
+   <error-page>
+      <exception-type>java.lang.ArithmeticException</exception-type>
+     <location>/errorHandler</location>
+   </error-page>
+
+</web-app>
