@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+       
+        <script>
+ 
+            function validate() {
+                alert(document.f.name.value);
+                if(document.f.name.value.length<3)
+                   alert("minimum length of name is 8 charcaters");
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <form name="f">
+            Name : <input type="text" name="name"><br>
+
+            Address: <input type="text" min="5" max="10" length="8" required/>
+        <input type="submit" onClick="validate()">
+        </form>
+    </body>
+</html>

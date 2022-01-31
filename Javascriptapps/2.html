@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <script>
+            function getStudentDetails() {
+                 var sname1=document.f.sname.value;  //document.getElementById();
+                    // alert("NAme uou entered is "+sname1);
+              var city=document.f.city.value; 
+            var city1=document.getElementsByName("city");
+                   //  alert("NAme uou entered is "+sname1 +" " +city+"  "+city1);
+
+            document.getElementById("result").innerHTML=sname1;
+               }
+                      
+    </script>
+</head>
+
+<body>  <!-- DOM   -->
+
+       <form  name="f" >
+           	Name: <input id="sn" type=text name="sname"/><br>
+             
+ 		Address: <textarea id="ad" type=text name="adress"></textarea><br>
+ 	
+		City: <input id="ct" type="text" name="city"/>
+
+               
+ 	
+        <input type=submit onclick="getStudentDetails()" />
+
+<hr>
+
+     </form><div id="result"></div>
+
+</body>
+</html>
+
+
+

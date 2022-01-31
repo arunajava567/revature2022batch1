@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <script >
+     function validate() {
+    	 alert("submit is selected...")
+    	 var a1=document.getElementById("a1");
+    	var a1=document.f.id.value.length;
+        if(a1<5)
+        alert("minimum characters should be 5");
+     }
+  
+  </script>
+</head>
+<body>
+    
+<div class="container">
+  <h2> Login Form  :ERS Application  </h2>
+  
+ 
+ 
+ <h1 id="abc">   </h1>
+            <form name="f">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td><Input id="a1" type="text" name="id"></td>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Password</td>
+        <td><input id="a2" type="password" name="password" required></td>
+      
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input id="a3" type="email" name="email" required></td>
+      
+      </tr>
+      <tr>
+        <td>Image </td>
+        <td><input id="a4" type="file" name="receipt" required></td>
+      
+      </tr>
+      <tr>
+        <td><input type="submit" value="submit"   onClick="validate()"></td>
+        <td><input type="reset" value="Cancel"></td>
+      
+      </tr>
+    </tbody>
+  </table>
+</form>
+</div>
+
+
+<button onclick= onclickEvent()>Click me!!</button>
+<p id= "para" onmouseover = onmouseoverEvent() onmouseout = onmouseoutEvent() >This is a Paragraph....</p>
+<script>
+    function onclickEvent(){
+        alert('Hello, You clicked the button');
+    }
+    function onmouseoverEvent(){
+        document.getElementById("para").style.backgroundColor = "green";
+    }
+    function onmouseoutEvent(){
+        document.getElementById("para").style.backgroundColor = "yellow";
+    }
+</script>
+
+
+<div onclick="alert('Bubbling: ' + this.tagName)">DIV
+    <p onclick="alert('Bubbling: ' + this.tagName)">P
+        <a href="#" onclick="alert('Bubbling: ' + this.tagName)">Click Me!!</a>
+    </p>
+</div>
+
+
+</body>
+</html>

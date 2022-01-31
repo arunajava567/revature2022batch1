@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+     function validate() {
+    var name=document.f.name.value;
+
+    if (name == "")
+     alert("cannot be empty");
+         else if (name.length<5)
+       alert("enter nam eiwth mor ethan 5 chars");
+    else
+        confirm("yes");
+
+
+}
+    </script>
+  
+<form name="f">
+ Name  : <input type=text name="name" />
+
+  <input type=submit onClick="validate()"/>
+
+</form>
+
+
+       
+    
+
+
+</body>
+</html>
+
