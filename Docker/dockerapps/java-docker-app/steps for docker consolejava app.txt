@@ -1,0 +1,28 @@
+steps:
+
+mkdir  java-docker-app 
+
+----> create Helo.java
+
+class Hello{  
+public static void main(String[] args){  
+System.out.println("This is java app \n by using Docker");  
+}  
+}  
+
+create Dockerfile in same folder:
+----->create Dockerfile
+
+FROM java:8  
+COPY . /var/www/java  
+WORKDIR /var/www/java  
+RUN javac Hello.java  
+CMD ["java", "Hello"]   
+
+--------> move the the java-docker-app folder 
+
+docker build -t java-app .  
+
+--------->
+
+docker run java-app

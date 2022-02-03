@@ -1,0 +1,2 @@
+===>create custom container
+docker build -t myubuntuimage .
